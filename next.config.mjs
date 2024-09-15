@@ -20,7 +20,7 @@ const nextConfig = {
                 ],
             },
             {
-                source: '/sw.js',
+                source: '/wibu_worker.js',
                 headers: [
                     {
                         key: 'Content-Type',
