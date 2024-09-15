@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@prisma/client": "^5.19.1",
+    "@types/lodash": "^4.17.7",
     "@types/web-push": "^3.6.3",
+    "lodash": "^4.17.21",
     "net": "^1.0.2",
     "next": "14.2.11",
     "prisma": "^5.19.1",

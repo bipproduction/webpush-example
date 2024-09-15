@@ -22,9 +22,10 @@ export async function POST() {
     // Notification payload
     const notificationPayload = JSON.stringify({
       title: "Test Notification",
-      body: "This is a test notification",
-      icon: "/icon.png",
-      badge: "/badge.png"
+      body: "This is a test notification | makuro",
+      icon: "/icon-192x192.png",
+      badge: "/icon-192x192.png",
+      image: "/icon-192x192.png",
     });
 
     let successCount = 0;
