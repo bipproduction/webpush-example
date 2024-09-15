@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.19.1",
     "@types/web-push": "^3.6.3",
     "net": "^1.0.2",
     "next": "14.2.11",
+    "prisma": "^5.19.1",
     "react": "^18",
     "react-dom": "^18",
     "tls": "^0.0.1",

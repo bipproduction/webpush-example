@@ -7,8 +7,9 @@ console.log(
   process.env.VAPID_PRIVATE_KEY
 );
 
+// webpush.setGCMAPIKey('<Your GCM API Key Here>');
 webpush.setVapidDetails(
-  "<mailto:bip.production.js@gmail.com>",
+  "mailto:bip.production.js@gmail.com",
   process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
   process.env.VAPID_PRIVATE_KEY!
 );
