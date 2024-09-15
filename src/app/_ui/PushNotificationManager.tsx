@@ -2,16 +2,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 
-// Refine Subscription type to match the Web Push API types
-type PushSubscriptionJSON = {
-  endpoint: string;
-  expirationTime: number | null;
-  keys: {
-    p256dh: string;
-    auth: string;
-  };
-};
-
 // Utility to convert VAPID public key from URL-safe base64 to Uint8Array
 export const urlB64ToUint8Array = (base64String: string) => {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4);
