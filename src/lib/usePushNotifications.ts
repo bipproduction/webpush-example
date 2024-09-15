@@ -1,5 +1,5 @@
-import { urlB64ToUint8Array } from "@/util/urlB64ToUint8Array";
 import { useState, useEffect } from "react";
+import { urlB64ToUint8Array } from "./urlB64ToUint8Array";
 
 export function usePushNotifications(publicKey: string) {
   const [isSupported, setIsSupported] = useState(false);
@@ -13,8 +13,6 @@ export function usePushNotifications(publicKey: string) {
       registerServiceWorker();
     }
   }, []);
-
-  
 
   const registerServiceWorker = async () => {
     try {

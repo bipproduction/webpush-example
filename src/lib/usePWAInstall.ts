@@ -11,6 +11,7 @@ export function usePWAInstall() {
       setDeferredPrompt(e);
     };
 
+
     const appInstalledHandler = () => {
       setIsAppInstalled(true);
     };
