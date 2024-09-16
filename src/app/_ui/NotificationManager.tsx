@@ -3,6 +3,8 @@ import { usePushNotifications } from "@/lib/usePushNotifications";
 import { usePWAInstall } from "@/lib/usePWAInstall";
 import { useState } from "react";
 
+// test v1
+
 export function NotificationManager({ publicKey }: { publicKey: string }) {
   const {
     isSupported,
@@ -13,6 +15,7 @@ export function NotificationManager({ publicKey }: { publicKey: string }) {
   const { deferredPrompt, isAppInstalled, handleInstallClick } =
     usePWAInstall();
   const [message, setMessage] = useState("halo apa kabar");
+
 
   const sendTestNotification = async () => {
     if (!subscription) return;
